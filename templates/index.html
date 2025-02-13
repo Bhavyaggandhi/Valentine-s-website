@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day ❤️</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="question">
+        <h2>Will you be my Valentine? 💖</h2>
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+    </div>
+    
+    <p id="response" style="display: none; font-size: 24px; color: red; margin-top: 10px;"></p>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <div class="carousel-container">
+        <img src="{{ url_for('static', filename='bg1.jpg') }}" class="active">
+        <img src="{{ url_for('static', filename='bg2.jpg') }}">
+        <img src="{{ url_for('static', filename='bg3.jpg') }}">
+        <img src="{{ url_for('static', filename='bg4.jpg') }}">
+        <img src="{{ url_for('static', filename='bg5.jpg') }}">
+        <img src="{{ url_for('static', filename='bg6.jpg') }}">
+        <img src="{{ url_for('static', filename='bg7.jpg') }}">
+    </div>   
+
+    <audio id="loveSong" src="{{ url_for('static', filename='love_song.mp3') }}"></audio>
+
+</body>
+</html>
